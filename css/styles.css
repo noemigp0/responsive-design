@@ -2,6 +2,36 @@ body {
     background-color: antiquewhite;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;   
+    margin-top: 20px;    
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4a25aa;
+    color: #fff;
+    padding: 64px 16px;
+    border-radius: 16px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.image{
+    width: 300px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 64px 16px;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+}
 /*
     Media querie para tablet
 */
@@ -11,29 +41,30 @@ body {
 */
 
 @media (min-width: 320px) and (max-width: 768px){
-    body {
-        background-color: #fff;
-        color:black;        
+    
+
+    .headerContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        font-family: "Roboto", sans-serif;
+        font-size: 1em;
     }
 
-    img {
-        width: 80%;
-        margin: 20px auto;
-        border-radius: 15px;
-    }
-    
     
 }
 
 @media (min-width:768px) and (max-width:1024px){
-    body {
-        background-color: brown;
-        color: white;
-    }
+   
 
-    img {
-        width: 100%;
-        border: 2px solid #fff;
+    .headerContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        font-family: "Roboto", sans-serif;
+        font-size: 2em;
     }
 }
 
